@@ -11,20 +11,25 @@ int main(void)
 {
 	int num;
 	int remd;
+	int thrd;
 
 	for (num = '0'; num <= '9'; num++)
 	{
 		for (remd = '0'; remd <= '9'; remd++)
 		{
-			if (num != remd && !(remd < num))
+			for (thrd = '0'; thrd <= '9'; thrd++)
 			{
-				putchar(num);
-				putchar(remd);
-
-				if (num != '8' || remd != '9')
+				if (num != remd && remd != thrd && thrd > remd && remd > num)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(num);
+					putchar(remd);
+					putchar(thrd);
+
+					if (num != '8' || remd != '9' )
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}

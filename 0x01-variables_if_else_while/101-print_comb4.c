@@ -25,7 +25,7 @@ int main(void)
 					putchar(remd);
 					putchar(thrd);
 
-					if (num != '8' || remd != '9' )
+					if (num != '7' || remd != '8' || thrd != '9')
 					{
 						putchar(',');
 						putchar(' ');

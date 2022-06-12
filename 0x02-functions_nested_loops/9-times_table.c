@@ -18,24 +18,24 @@ void times_table(void)
 
 			if (l > 9)
 			{
-				putchar((l / 10) + '0');
-				putchar((l % 10) + '0');
+				_putchar((l / 10) + '0');
+				_putchar((l % 10) + '0');
 			}
 			else if (l <= 9)
 			{
-				putchar((l % 10) + '0');
-				putchar(' ');
+				_putchar((l % 10) + '0');
+				_putchar(' ');
 			}
 
 			if (mul != 9)
 			{
-				putchar(',');
-				putchar(' ');
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 		num++;
 	}
 
-	putchar('\n');
+	_putchar('\n');
 }

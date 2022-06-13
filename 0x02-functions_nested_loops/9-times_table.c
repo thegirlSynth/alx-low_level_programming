@@ -20,18 +20,18 @@ void times_table(void)
 			{
 				if (l <= 9)
 				{
-					putchar(',');
-					putchar(' ');
-					putchar(' ');
-					_putchar(l+ '0');
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(l + '0');
 				}
 
 				else
 				{
-					putchar(',');
-					putchar(' ');
-					putchar((l / 10) + '0');
-					putchar((l % 10) + '0');
+					_putchar(',');
+					_putchar(' ');
+					_putchar((l / 10) + '0');
+					_putchar((l % 10) + '0');
 				}
 
 			}

@@ -22,7 +22,7 @@ void rev_string(char *s)
 	red = count - 1;
 
 	num = 0;
-	while (num < (count/2))
+	while (num < (count / 2))
 	{
 		store = s[num];
 		s[num] = s[red];

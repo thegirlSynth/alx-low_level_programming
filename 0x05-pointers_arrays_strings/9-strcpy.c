@@ -5,8 +5,8 @@
  * including the terminating null byte (\0),
  * to the buffer pointed to by dest.
  *
- * @*dest: the pointer that signals a destination buffer.
- * @*src: points to the string to be copied.
+ * @dest: the pointer that signals a destination buffer.
+ * @src: points to the string to be copied.
  * Return: the pointer to dest.
  */
 

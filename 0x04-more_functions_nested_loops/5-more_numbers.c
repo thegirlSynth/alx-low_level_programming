@@ -15,9 +15,10 @@ void more_numbers(void)
 		mul = 0;
 		while (mul <= 14)
 		{
-			if (mul <= 9)
+
+			if (mul > 9)
 			{
-				 _putchar((mul / 10) + '0');
+				_putchar((mul / 10) + '0');
 			}
 
 			_putchar((mul % 10) + '0');

@@ -25,7 +25,7 @@ void more_numbers(void)
 
 			mul++;
 		}
-		_putchar('\n');
 		num++;
+		_putchar('\n');
 	}
 }

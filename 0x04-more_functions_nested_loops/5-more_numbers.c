@@ -17,18 +17,14 @@ void more_numbers(void)
 		{
 			if (mul <= 9)
 			{
-				_putchar(mul + '0');
+				 _putchar((mul / 10) + '0');
 			}
-			else
-			{
-				_putchar((mul / 10) + '0');
-				_putchar((mul % 10) + '0');
-			}
+
+			_putchar((mul % 10) + '0');
 
 			mul++;
 		}
 		_putchar('\n');
 		num++;
 	}
-	_putchar('\n');
 }

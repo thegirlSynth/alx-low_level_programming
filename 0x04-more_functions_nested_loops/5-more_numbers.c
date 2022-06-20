@@ -21,8 +21,8 @@ void more_numbers(void)
 			}
 			else
 			{
-				_putchar(mul / 10 + '0');
-				_putchar(mul % 10 + '0');
+				_putchar((mul / 10) + '0');
+				_putchar((mul % 10) + '0');
 			}
 
 			mul++;

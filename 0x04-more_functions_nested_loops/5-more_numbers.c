@@ -9,11 +9,9 @@ void more_numbers(void)
 {
 	int num, mul;
 
-	num = 0;
-	while (num <= 10)
+	for (num = 0; num <= 10; num++)
 	{
-		mul = 0;
-		while (mul <= 14)
+		for (mul = 0; mul <= 14; mul++)
 		{
 
 			if (mul > 9)
@@ -23,9 +21,7 @@ void more_numbers(void)
 
 			_putchar((mul % 10) + '0');
 
-			mul++;
 		}
-		num++;
 		_putchar('\n');
 	}
 }

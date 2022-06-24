@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 
-int checker(char *s1, char *s2, int a, int b, int wildUsed)
+int checker(char *s1, char *s2, int a, int b, int wildUsed);
+int checkLast(char *s, int i)int checkLast(char *s, int i);
 /**
  * wildcmp - check the code for Holberton School students.
  * @s1: string

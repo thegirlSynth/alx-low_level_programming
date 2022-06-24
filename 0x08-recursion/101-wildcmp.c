@@ -63,7 +63,6 @@ int checker(char *s1, char *s2, int a, int b, int wildUsed)
 
 		if (wildUsed == -1)
 			return (0);
-		
 		return (checker(s1, s2, a, wildUsed, wildUsed));
 
 	}

@@ -1,4 +1,4 @@
-int _putchar(char c)
+int _putchar(char c);
 int wildcmp(char *s1, char *s2);
 int is_palindrome(char *s);
 int is_prime_number(int n);

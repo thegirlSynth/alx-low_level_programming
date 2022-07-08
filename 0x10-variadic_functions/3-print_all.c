@@ -34,17 +34,17 @@ void print_all(const char * const format, ...)
 			switch (j)
 			{ case 1: printf(", "); }
 			j = 1;
-			printf("%f", va_arg(begin, int));
+			printf("%f", va_arg(begin, double));
 			break;
 		case 's':
 			switch (j)
 			{ case 1: printf(", "); }
 			j = 1;
-			p = va_arg(list, char*);
-			if (p)
-			{ printf("%s", p);
+			string = va_arg(begin, char*);
+			if (string)
+			{ printf("%s", string);
 			break; }
-			printf("%p", p);
+			printf("%p", string);
 			break; }
 		i++;
 	}

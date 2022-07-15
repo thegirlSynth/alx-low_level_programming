@@ -1,10 +1,10 @@
 #include "lists.h"
 
+void __attribute__((constructor))printBeforeMain(void);
+
 /**
  * printBeforeMain - prints a string before main executes.
  */
-
-void __attribute__((constructor))printBeforeMain(void);
 
 void printBeforeMain(void)
 {

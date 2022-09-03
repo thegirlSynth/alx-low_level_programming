@@ -13,4 +13,6 @@ if pwd == ok:
     print('OK')
 else:
     print('KO')
+
+# printing the password:
 print(ok)

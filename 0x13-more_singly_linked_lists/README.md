@@ -2,12 +2,14 @@
 
 ## Definition:
 A singly linked list is a type of linked list that is unidirectional; that is, it can only be traversed in one direction from head to the last node (tail).
+
 It is the simplest type of linked list and every node contains some data, and a pointer to the next node; apart from the head which only contains a pointer to the first node.
+
 Also, the tail node contains some data, and a pointer to `NULL`.
 
 ---
 
-## Prototypes:
+## Data Structure:
 
 This is the format of the struct used in this project.
 ```
@@ -26,7 +28,7 @@ typedef struct listint_s
 } listint_t;
 ```
 
-Other prototypes include:
+## Prototypes:
 
 `size_t print_listint(const listint_t *h)`
 
@@ -60,20 +62,34 @@ Other prototypes include:
 
 ---
 
-### More description
+## Description
 
-* Script 0-print_listint.c  prints all the elements of a listint_t list.
-* Script 1-listint_len.c returns the number of elements in a linked listint_t list.
-* Script 2-add_nodeint.c adds a new node at the beginning of a listint_t list.
-* Script 3-add_nodeint_end.c adds a new node at the end of a listint_t list.
-* Script 4-free_listint.c frees a listint_t list.
-* Script 5-free_listint2.c frees a listint_t list.
-* Script 6-pop_listint.c deletes the head node of a listint_t linked list, and returns the head node’s data (n).
-* Script 7-get_nodeint.c returns the nth node of a listint_t linked list.
-* Script 8-sum_listint.c returns the sum of all the data (n) of a listint_t linked list.
-* Script 9-insert_nodeint.c inserts a new node at a given position.
-* Script 10-delete_nodeint.c deletes the node at index index of a listint_t linked list.
-* Script 100-reverse_listint.c reverses a listint_t linked list.
-* Script 101-print_listint_safe.c prints a listint_t linked list.
-* Script 102-free_listint_safe.c frees a listint_t list.
-* Script 103-find_loop.c finds the loop in a linked list.
+* `0-print_listint.c`  prints all the elements of a `listint_t` list.
+
+* `1-listint_len.c` returns the number of elements in a linked `listint_t` list.
+
+* `2-add_nodeint.c` adds a new node at the beginning of a `listint_t` list.
+
+* `3-add_nodeint_end.c` adds a new node at the end of a `listint_t` list.
+
+* `4-free_listint.c` frees a `listint_t` list.
+
+* `5-free_listint2.c` frees a `listint_t` list.
+
+* `6-pop_listint.c` deletes the head node of a `listint_t` linked list, and returns the head node’s data (n).
+
+* `7-get_nodeint.c` returns the nth node of a `listint_t` linked list.
+
+* `8-sum_listint.c` returns the sum of all the data (n) of a `listint_t` linked list.
+
+* `9-insert_nodeint.c` inserts a new node at a given position.
+
+* `10-delete_nodeint.c` deletes the node at index `index` of a `listint_t` linked list.
+
+* `100-reverse_listint.c` reverses a `listint_t` linked list.
+
+* `101-print_listint_safe.c` prints a `listint_t` linked list.
+
+* `102-free_listint_safe.c` frees a `listint_t` list.
+
+* `103-find_loop.c` finds the loop in a linked list.

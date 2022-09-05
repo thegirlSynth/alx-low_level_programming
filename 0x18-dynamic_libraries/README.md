@@ -3,7 +3,7 @@
 ## Description
 
 * `libdynamic.so` is a dynamic library containing all the functions listed below:
-  ```
+
   * `int _putchar(char c);`
   * `int _islower(int c);`
   * `int _isalpha(int c);`
@@ -24,7 +24,6 @@
   * `unsigned int _strspn(char *s, char *accept);`
   * `char *_strpbrk(char *s, char *accept);`
   * `char *_strstr(char *haystack, char *needle);`
-```
 
 * `1-create_dynamic_lib.sh` creates a dynamic library called `liball.so` from all the `.c` files that are in the current directory.
 * `100-operations.so` is a dynamic library that contains C functions that can be called from Python.

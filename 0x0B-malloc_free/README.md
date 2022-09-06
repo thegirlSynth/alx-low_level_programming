@@ -1,18 +1,34 @@
-This directory contains files that illustrate the use of malloc, free, and valgrind in memory allocation.
+# C - malloc, free
+This directory contains files that illustrate the use of `malloc`, `free`, and `valgrind` in memory allocation.
 
-Script 0-create_array.c creates an array of chars, and initializes it with a specific char.
+## Prototypes
+`char *create_array(unsigned int size, char c);`
 
-Script 1-strdup.c returns a pointer to a newly allocated space in memory, which contains a copy of the string given as a parameter.
+`char *_strdup(char *str);`
 
-Script 2-str_concat.c concatenates two strings.
+`char *str_concat(char *s1, char *s2);`
 
-Script 3-alloc_grid.c returns a pointer to a 2 dimensional array of integers.
+`int **alloc_grid(int width, int height);`
 
-Script 4-free_grid.c frees a 2 dimensional grid previously created by your alloc_grid function.
+`void free_grid(int **grid, int height);`
 
-Script 100-argstostr.c concatenates all the arguments of your program.
+`char *argstostr(int ac, char **av);`
 
-Script 101-strtow.c splits a string into words.
+`char **strtow(char *str);`
 
-Script main.h is a header file containing all the prototypes of functions used in this directory
+## Description
+* `0-create_array.c` creates an array of chars, and initializes it with a specific char.
 
+* `1-strdup.c` returns a pointer to a newly allocated space in memory, which contains a copy of the string given as a parameter.
+
+* `2-str_concat.c` concatenates two strings.
+
+* `3-alloc_grid.c` returns a pointer to a 2 dimensional array of integers.
+
+* `4-free_grid.c` frees a 2 dimensional grid previously created by the `alloc_grid` function.
+
+* `100-argstostr.c` concatenates all the arguments of your program.
+
+* `101-strtow.c` splits a string into words.
+
+* `main.h` is a header file containing all the prototypes of functions used in this project.

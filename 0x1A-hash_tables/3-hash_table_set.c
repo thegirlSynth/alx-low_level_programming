@@ -20,6 +20,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	index = key_index((const unsigned char *)key, ht->size);
 
+	while (ht->array[index])	/* Updating an already existing node */
+	{
+		if (strcmp(ht->array[index]->key, key) == 0)
+		{
+			free(ht->array[index]->value);
+			ht->array[index]->value = strdup(value);
+			return (1);
+		}
+	}
+
+
 	newnode = malloc(sizeof(hash_node_t));
 	if (newnode == NULL)
 		return (0);

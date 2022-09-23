@@ -12,13 +12,14 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	int index;
-	hash_node_t *newnode, *oldnode = ht->array[index];
+	hash_node_t *newnode, *oldnode;
 
 
 	if (ht == NULL || key == NULL || *key == '\0')
 		return (0);
 
 	index = key_index((const unsigned char *)key, ht->size);
+	oldnode = ht->array[index];
 
 	while (oldnode)	/* Updating an already existing node */
 	{

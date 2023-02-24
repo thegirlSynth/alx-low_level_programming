@@ -35,7 +35,12 @@ def island_perimeter(grid):
 
             if list_index < len(list) - 1:
                 if list[list_index + 1] == 0:
-                    perimeter += 1  
+                    perimeter += 1
+
+            if list_index > 0:
+                if list[list_index - 1] == 0:
+                    perimeter += 1
+
             if list_index == len(list) - 1:
                     perimeter += 1
 

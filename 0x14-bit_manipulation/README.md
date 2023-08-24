@@ -1,1 +1,1 @@
-### Bit Manipulation in C
+### C - Bit manipulation
